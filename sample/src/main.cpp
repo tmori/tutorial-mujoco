@@ -98,7 +98,7 @@ int main(int argc, const char* argv[])
     mujoco_data = mj_makeData(mujoco_model);
 
     // 初期化
-    mujoco_data->qpos[2] = 100.0;  // キューブの初期高さを設定
+    mujoco_data->qpos[2] = 10.0;  // キューブの初期高さを設定
     mj_forward(mujoco_model, mujoco_data);  // 状態を計算して反映
 
     const char* config_path = argv[1];

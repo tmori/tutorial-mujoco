@@ -15,7 +15,8 @@
                 "method_type": "SHM"
             }
         ],
-        "shm_pdu_readers": []
+        "shm_pdu_readers": [
+        ]
     }
   ]
 }

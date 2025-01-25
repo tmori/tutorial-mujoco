@@ -1,0 +1,19 @@
+<mujoco model="SimpleCube">
+  <!-- 基本設定 -->
+  <compiler autolimits="true"/>
+  <option timestep="0.01" integrator="implicitfast" gravity="0 0 -9.81"/>
+
+  <!-- 地面 -->
+  <worldbody>
+    <!-- 静的な地面 -->
+    <geom type="plane" size="100 100 0.1" pos="0 0 0"/>
+
+    <!-- 落下するキューブ -->
+    <body name="cube" pos="0 0 2">
+      <!-- 6自由度を持つ関節 -->
+      <joint type="free" name="cube_free_joint"/>
+      <!-- キューブ形状 -->
+      <geom type="box" size="0.5 0.5 0.5" density="1000"/>
+    </body>
+  </worldbody>
+</mujoco>

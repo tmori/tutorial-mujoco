@@ -13,6 +13,24 @@
                 "pdu_size": 72,
                 "write_cycle": 1,
                 "method_type": "SHM"
+            },
+            {
+                "type": "geometry_msgs/Twist",
+                "org_name": "left_wheel_angle",
+                "name": "Cube_left_wheel_angle",
+                "channel_id": 1,
+                "pdu_size": 72,
+                "write_cycle": 1,
+                "method_type": "SHM"
+            },
+            {
+                "type": "geometry_msgs/Twist",
+                "org_name": "right_wheel_angle",
+                "name": "Cube_right_wheel_angle",
+                "channel_id": 2,
+                "pdu_size": 72,
+                "write_cycle": 1,
+                "method_type": "SHM"
             }
         ],
         "shm_pdu_readers": [

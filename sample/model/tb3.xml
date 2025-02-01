@@ -72,9 +72,9 @@
   </worldbody>
   <actuator>
     <!-- 左モーター（初期値5.0で回転） -->
-    <motor name="left_motor" joint="left_wheel_hinge" ctrllimited="true" ctrlrange="-1 1"  gear = "1.0"/>
+    <motor name="left_motor" joint="left_wheel_hinge" ctrllimited="true" ctrlrange="-10 10"  gear = "1.0"/>
 
     <!-- 右モーター（初期値5.0で回転） -->
-    <motor name="right_motor" joint="right_wheel_hinge" ctrllimited="true" ctrlrange="-1 1"  gear = "1.0"/>
+    <motor name="right_motor" joint="right_wheel_hinge" ctrllimited="true" ctrlrange="-10 10"  gear = "1.0"/>
   </actuator>
 </mujoco>

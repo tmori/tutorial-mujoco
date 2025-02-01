@@ -100,7 +100,7 @@
       <site site="green"/>
       <site site="weight2"/>
     </spatial>
-    <spatial range="0 0.5">
+    <spatial range="0 0.1">
       <site site="orange"/>
       <site site="weight2"/>
     </spatial>

@@ -47,8 +47,7 @@
     <!-- 本体（ベース） -->
     <body name="tb3_base" pos="0 0 0.05" childclass="orange">
       <freejoint/>
-      <inertial pos="0 0 -0.0" mass="2.0"/>  <!-- 重心を下にずらす -->
-      <geom name="base" type="box" size="0.13 0.13 0.16" mass="2.0"/>
+      <geom name="base" type="box" size="0.13 0.13 0.16" mass="1.0"/>
       
       <!-- 左車輪 -->
       <body name="left_wheel" pos="0.1 0.17 -0.12" euler="90 0 0" childclass="pink">
@@ -62,9 +61,12 @@
         <geom name="right_wheel_geom" type="cylinder" size="0.1 0.03" density="500" friction="1.1"/>
       </body>
 
-      <!-- 前キャスター -->
-      <body name="front_castor" pos="-0.12 0 -0.175" childclass="blue">
-        <geom name="castor" type="sphere" size="0.02" mass="0.1" friction="0.0"/>
+      <!-- キャスター -->
+      <body name="back_castor" pos="-0.12 0 -0.175" childclass="blue">
+        <joint name="castor_yaw" type="hinge" axis="0 0 1" damping="0.1"/>
+        <joint name="castor_pitch" type="hinge" axis="0 1 0" damping="0.1"/>
+        <joint name="castor_roll" type="hinge" axis="1 0 0" damping="0.1"/>
+        <geom name="castor" type="sphere" size="0.02" density="500" friction="0.5"/>
       </body>
     </body>
   </worldbody>
